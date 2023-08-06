@@ -1,7 +1,5 @@
 # JS-CoderDost
 
-# JavaScript Full Course 2023
-
 ## Chapter 1 (Data Types)
 
 ### Assignments
