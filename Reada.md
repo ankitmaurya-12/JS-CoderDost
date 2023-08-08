@@ -149,3 +149,17 @@ Intro and Setups
  |-Chapter 14 Advance Concepts
 
 14.1 Closures
+
+
+
+
+
+SLIDES INDEX
+
+1. JS Basic Pg 2.
+2. Flow Control 67.
+3. Function Pg 93.
+4. Objects Pg 
+5. ES6 Pg
+6.
+7.

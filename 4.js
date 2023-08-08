@@ -117,7 +117,8 @@
 // Modify the function checkObj to test if the object passed to the function parameter obj contains the specific property passed to the function parameter checkProp. If the property passed to checkProp is found on obj, return that property's value. If not, return Not Found.
 
 // function checkObj(obj, checkProp) {
-//     //   // Only change code below this line
+//       // Only change code below this line
+
 //       if (obj.hasOwnProperty(checkProp)){
 //           return obj[checkProp];
 //       }else {
@@ -286,8 +287,8 @@
 
 // // using forEach method
 
-// dishes.forEach(function(element){    //it different type of programming called fuctional programing
-//     console.log(element);
+// dishes.forEach(function(element){    //it different type of programming called fuctional programing   
+    // console.log(element);         //<--! element name can be changed to anything -->
 // })
 
 
@@ -402,7 +403,6 @@ console.log(childPlane)   //this will return whole object with push value in "bo
 
 book.call(mainPlane,151,"Santu");   // you can also call it for mainplane 
 console.log(mainPlane) //this will return whole object with push value in "booking"
-
 
 
 
