@@ -49,23 +49,23 @@ Intro and Setups
 
 |-Chapter 5 DOM
 
-03:42:02 5.1 DOM Introduction
-03:46:08 5.2 Query Selector
-03:51:43 5.3 Other Ways to access Elements
-03:56:58 5.4 innerText Vs innerHTML
-04:02:26 5.5 Getting And Setting the Attribute
-04:06:10 5.6 Adding the style
-04:08:10 5.7 Add, Remove And Replace Class
-04:10:50 5.8 Parent Children and Sibling
-04:17:31 5.9 Event Basics
-04:26:31 5.10 Creating And Removing Element
-04:29:18 5.11 Bubbling And Delegation
+5.1 DOM Introduction
+5.2 Query Selector
+5.3 Other Ways to access Elements
+5.4 innerText Vs innerHTML
+5.5 Getting And Setting the Attribute
+5.6 Adding the style
+5.7 Add, Remove And Replace Class
+5.8 Parent Children and Sibling
+5.9 Event Basics
+5.10 Creating And Removing Element
+5.11 Bubbling And Delegation
 
 
  |-Chapter 6 DOM - Forms
 
-04:39:35 6.1 Submit Event
-04:46:35 6.2 Regular Expression
+6.1 Submit Event
+6.2 Regular Expression
 6.3 Basic Form Validation
 6.4 Keyboard Event
 

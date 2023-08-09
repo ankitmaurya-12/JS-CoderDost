@@ -275,7 +275,7 @@
 // Its another type of loop which we used to traverse over the array
 
 
-// let dishes=["Biryani","Pani-Puri","choley","Pizza"]
+let dishes=["Biryani","Pani-Puri","choley","Pizza"]
 
 // // using loop
 
@@ -287,12 +287,21 @@
 
 // // using forEach method
 
+// let lowCased = [];
+
 // dishes.forEach(function(element){    //it different type of programming called fuctional programing   
+    // lowCased.push(element.toLowerCase());       //we can also push it to another array,  // Push lowercase version of the element
     // console.log(element);         //<--! element name can be changed to anything -->
 // })
 
+// console.log(lowCased);
 
+// another way of writing can be this
+// let upCased =[];
 
+// dishes.forEach((element) => upCased.push(element.toUpperCase()))  // Push uppercase version of the element
+// console.log(upCased);
+// console.log(upCased);
 
 
 // <------------------------------------------------------------------------------------>
@@ -321,25 +330,45 @@
 // let number =7.6;
 // let number =7.9;
 
-//Math.round
-// console.log(Math.round(number))   //Math.round used to find nearest number according to input
+
+// Math.abs
+// console.log(Math.abs(-2));         // Math.abs returns the absolute value of a number. The absolute value of a number is its distance from zero on the number line, regardless of whether the original number is positive or negative.
 
 
-//Math.floor
-// console.log(Math.floor(number))   //Math.floor used to find smallest number according to input 
+// Math.round
+// console.log(Math.round(number));   //Math.round used to find nearest number according to input
 
 
-//Math.ceil
-// console.log(Math.ceil(number))   //Math.ceil used to find larger number according to input
+// Math.floor
+// console.log(Math.floor(number));   //Math.floor used to find smallest number according to input 
+
+
+// Math.ceil
+// console.log(Math.ceil(number));   //Math.ceil used to find larger number according to input
+
 
 // Math.trunc
-// console.log(Math.trunc(number))   //Math.trunc used to remove decimle part according to input
+// console.log(Math.trunc(number));   //Math.trunc used to remove decimle part according to input
+
+
+// Math.sqrt
+// console.log(Math.sqrt(16));         // Math.sqrt used to give square root of input
+
+
+// Math.max
+// console.log(Math.max(10, 100, 54, 30));     // Math.max used to give max number according the input
+
+// Math.min
+// console.log(Math.min(10, 100, 54, 30));     // Math.min used to give min number according the input
+
 
 // Math.random
-// let random=Math.random()         //it will select random numbers in between 0 and 1
+// let random=Math.random();         //it will select random numbers in between 0 and 1
 // console.log(random);
 
+
 // console.log(Math.round(random));  // after round off if greater than 0.5 then 1 else 0
+
 
 // console.log(Math.round(random*100));  // when we need number between 0 and 100 multiply it by 100.
 
@@ -353,40 +382,40 @@
 
 // We can manually set the value of "this" Keyword using "call and apply"
 
-"use-strict"   // its a javascript property which will tell you error correctly in inspect
+// "use-strict"   // its a javascript property which will tell you error correctly in inspect
 
-let mainPlane={
-    airline:'Air India',
-    iatacode:'F1',
-    booking:[],
-    book:function(flightNum,name){
-        console.log(`Mr\\Mrs. ${name} booked Flight on ${this.airline} with Seat-Number "${flightNum}" which and Plane IATA Code is ${this.iatacode}.`)
-        this.booking.push({flightName:`${this.airline}`,passangerName:name, flightNum:`${this.iatacode}${flightNum}`})
-    }
-}
+// let mainPlane={
+    //     airline:'Air India',
+//     iatacode:'F1',
+//     booking:[],
+//     book:function(flightNum,name){
+//         console.log(`Mr\\Mrs. ${name} booked Flight on ${this.airline} with Seat-Number "${flightNum}" which and Plane IATA Code is ${this.iatacode}.`)
+//         this.booking.push({flightName:`${this.airline}`,passangerName:name, flightNum:`${this.iatacode}${flightNum}`})
+//     }
+// }
 
-mainPlane.book(204,"Ankit");
-mainPlane.book(110,"Shubham");    //now just you have to add flighht no. and name else work done automatically
+// mainPlane.book(204,"Ankit");
+// mainPlane.book(110,"Shubham");    //now just you have to add flighht no. and name else work done automatically
 
 // console.log(mainPlane)
 
 
 // New airline launched of same group
 
-let childPlane={
-    airline:'Air Assia',
-    iatacode:'F5',
-    booking:[],
-    book:function(flightNum,name){
+// let childPlane={
+//     airline:'Air Assia',
+//     iatacode:'F5',
+//     booking:[],
+//     book:function(flightNum,name){
         // we can just copy paste above code here but it not a best practice
         
         // console.log(`Mr\\Mrs. ${name} booked Flight on ${this.airline} with Seat-Number "${flightNum}" which and Plane IATA Code is ${this.iatacode}.`)
         // this.booking.push({flightName:`${this.airline}`,passangerName:name, flightNum:`${this.iatacode}${flightNum}`})
         
-    }
-}
-
-let book=mainPlane.book
+    // }
+    // }
+    
+// let book=mainPlane.book
 
 // book(368,"Lucky");  //book is regular function but it can read push value
 // "this" value is undefined at least in strict mode
@@ -394,24 +423,127 @@ let book=mainPlane.book
 
 // Solution using "call" metod
 
-book.call(childPlane,368,"Lucky");   // it euivalent to book(368,"Lucky")
+// book.call(childPlane,368,"Lucky");   // it euivalent to book(368,"Lucky")
 
 
-console.log(childPlane)   //this will return whole object with push value in "booking"
-
-
-
-book.call(mainPlane,151,"Santu");   // you can also call it for mainplane 
-console.log(mainPlane) //this will return whole object with push value in "booking"
+// console.log(childPlane)   //this will return whole object with push value in "booking"
 
 
 
+// book.call(mainPlane,151,"Santu");   // you can also call it for mainplane 
+// console.log(mainPlane) //this will return whole object with push value in "booking"
 
-// *IMP* "apply" mrthod
+
+
+
+// *IMP* "apply" method
 
 // it used previously when there is no callback function then apply used 
 // apply is same as callback function just pass value in array function
 
 
-book.apply(childPlane,[654,"Harry"]);
-console.log(childPlane);
+// book.apply(childPlane,[654,"Harry"]);
+// console.log(childPlane);
+
+
+
+// *bind method*
+
+// function greet(){
+    // console.log(`Welcome ${this.firstName} ${this.lastName} to Mumbai.`)
+    
+// }
+
+// above one is seprate function
+// belowe one is a seprate object
+
+// let user ={
+    // firstName:'Ankit',
+    // lastName:'Maurya'
+// }
+
+// and bind use to bind both so that we can use object value to property
+
+// let greets = greet.bind(user);
+
+// greets();
+
+
+
+
+
+// <------------------------------------------------------------------------------------>
+
+// 4.8 Pass by value and pass by reference 
+
+// "Objects/Array" how "reference" are passsed to variable
+
+
+// let arr=[1,2,3,4,5]
+
+// let getRef =arr;     // assigning arr to new variable
+// its called pass by refernce 
+
+// console.log("Original Array " ,arr);
+// console.log("Refernce Array " ,getRef);
+//it will not create copy of arr, it itself go to getRef
+// means any change change in arr will change getRef and vice-versa
+
+
+// like we here use shift then it will work on both variable
+// getRef[5]=6;
+// arr.shift();
+// console.log("Original Array " ,arr);
+// console.log("Refernce Array " ,getRef);
+
+// but what if we just want copy of arr value not property
+
+
+
+// pass by Value
+
+// let getValue =[...arr];  //spread operator property in ES6.
+// its called pass by value
+// it will just copy arr value not property of it
+
+// console.log("Original array ", arr);
+// console.log("getVlue array ", getValue);
+
+
+// getValue[0]=9;
+// console.log("getVlue array ", getValue);
+
+
+
+
+// <------------------------------------------------------------------------------------>
+
+// 4.9 for-in loop
+
+// its the only loop which used in object but most of loops are used in array
+
+// let car={
+//     model:2023,
+//     color:'Black',
+//     company:'Toyota'
+// }
+// console.log(car);  //here we peinting whole object including property and value
+
+//but for-in used to print objects all values as it name suggest in inside object
+// for (const key in car) {;   // its not compuslory to write key you can write any thing 
+//         console.log(key);
+// }
+
+// it can also be written as 
+// let x="";
+// for (let y in car){
+//     x= x +" "+ car[y]   // here " " is used to give space inbetween
+// }
+// console.log(x);
+
+// const object ={a:1,b:2,c:3,d:4};
+
+// for(const property in object){
+//     console.log(`${property}: ${object[property]}`);  
+//     // here property--> these properties are called enumerbale property.
+// }
