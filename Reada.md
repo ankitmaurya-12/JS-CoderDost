@@ -60,6 +60,7 @@ Intro and Setups
 5.9 Event Basics
 5.10 Creating And Removing Element
 5.11 Bubbling And Delegation
+5.12 More Events
 
 
  |-Chapter 6 DOM - Forms
