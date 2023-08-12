@@ -11,6 +11,18 @@
             font: 200;
             font-family: 'segoe UI', Tahoma, Geneva, Verdana;
         }
+        .success {
+        border: 1px solid green;
+        background-color: #dfffdf; /* Light green background */
+        color: green;
+        }
+
+        /* Styles for an erroneous input */
+        .error {
+            border: 1px solid red;
+            background-color: #ffdfdf; /* Light red background */
+            color: red;
+        }
 
     </style>
 </head>
@@ -18,7 +30,10 @@
     <h2>Be part of Coder Dost Family</h2>
     
     <form action="" class="sign-up-form" >
-        <input type="email" name="userEmail" id="email" placeholder="Email">
+        <!-- <input type="email" name="userEmail" id="email" placeholder="Email"> -->
+
+        <!-- //below code if for 6.3 -->
+        <input type="text" name="user" id="name" placeholder="username">
         <br>
         <input type="password" name="userpassword" id="password" placeholder="Password">
         <br>
