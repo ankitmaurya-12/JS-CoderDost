@@ -72,43 +72,43 @@ Intro and Setups
 
  |-Chapter 7 Array Methods
 
-05:12:44 7.0 Array Methods
-05:17:52 7.1 slice
-05:20:31 7.2 splice
-05:24:42 7.3 at
-05:28:35 7.4 Map
-05:32:08 7.5 Filter
-05:35:24 7.6 Reduce
-05:38:36 7.7 find 
-05:41:32 7.8 findIndex
-05:44:36 7.9 some and every
-05:49:24 7.10 flat Method
-05:53:59 7.11 flatMap Method
-05:59:25 7.12 Sorting arrays
-06:06:44 7.13 Chaining of methods
+7.0 Array Methods
+7.1 slice
+7.2 splice
+7.3 at
+7.4 Map
+7.5 Filter
+7.6 Reduce
+7.7 find 
+7.8 findIndex
+7.9 some and every
+7.10 flat Method
+7.11 flatMap Method 
+7.12 Sorting arrays
+7.13 Chaining of methods
 
  |-Chapter 8 Date
-06:18:43 8.1 Date And Time 
+8.1 Date And Time 
 8.2 Date And Time Methods
-06:28:14 8.3 Digital Clock
+8.3 Digital Clock
 
  |-Chapter 9 LocalStorage
-06:31:47 9.1 Local Storage intro
-06:34:01 9.2 Set and Get items
-06:38:11 9.3 Deleting Items
-06:39:34 9.4 Store Complex data 
+9.1 Local Storage intro
+9.2 Set and Get items
+9.3 Deleting Items
+9.4 Store Complex data 
 
  |-Chapter 10 OOP
 
-06:44:42 10.1 Constructor and NEW operator
-06:51:30 10.2 Prototypes
-06:56:13 10.3 Prototypical inheritance
-07:02:18 10.4 ES6 Classes
-07:08:28 10.5 setters and getters
-07:14:27 10.6 static methods
-07:18:13 10.7 Class Inheritance
+10.1 Constructor and NEW operator
+10.2 Prototypes
+10.3 Prototypical inheritance
+10.4 ES6 Classes
+10.5 setters and getters
+10.6 static methods
+10.7 Class Inheritance
 10.8 Inheritance by Prototypes
-07:30:16 10.9 Chaining of methods
+10.9 Chaining of methods
 
 
  |-Chapter 11 Async JS
