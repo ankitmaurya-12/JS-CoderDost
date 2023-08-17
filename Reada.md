@@ -122,9 +122,9 @@ Intro and Setups
 08:16:48 11.8 Chaining of promise
 08:20:06 11.9 Fetch API
 08:22:53 11.10 Async Await
- 11.11 Custom Errors
- 11.12 Async Await without return statement
- 11.13 Error Handling using try catch method
+11.11 Custom Errors
+11.12 Async Await without return statement
+11.13 Error Handling using try catch method
 
  |-Chapter 12 ES6
 08:44:03 12.1 Array De-structuring

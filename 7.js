@@ -59,8 +59,10 @@
 
 // first comment out this and observe output then comment 
 // let newArray = num.splice(1,1,1);
-// console.log("New Array : ",newArray);
 // console.log("Original Array : ",num);
+// console.log("New Array : ",newArray);
+
+// console.log(num.splice(1,1,1));
 
 // After comment out this and observe output then comment 
 // let secArray = num.splice(1,2,1);
@@ -169,5 +171,245 @@
 // Array.reduce(function(total.currentValue),initialValue)
 // It return single Value
 
-// Sum of All elements using
+// Sum of All elements using reduce method
 
+// let num =[1,2,3,4,5,6,7,8,9,10,11];
+// console.log(num);
+
+// method 1
+// let sum =num.reduce(fuction(total,currentValue){
+//     return total + currentValue;
+// },0);
+
+// method 2
+// let sum =num.reduce((total,currentValue)=>{
+// return total + currentValue;
+//},0);
+
+
+// console.log(sum);
+// console.log(num);
+
+// Does not mutate original array
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.7 find 
+
+// It retun the "first" elments we are looking for....
+// Used in complex objects like structure
+
+// let students =[{id:1,name:"Ankit"},{id:2,name:"Jhon"},{id:3,name:"Alex"},{id:1,name:"Paul"}];
+// console.log(students);
+
+// if two or more students have same id then it will return only first element
+// let result =students.find(students=>{
+    // return students.id ===1
+// })
+
+// console.log(result);
+
+// if id din't match then it will return undefined
+
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.8 findIndex
+
+// Execuate function for each array element 
+// It rreturn "index" of that array element who "first" pass the test otherwise "-1".
+
+
+// let students =[{id:1,name:"Ankit"},{id:2,name:"Jhon"},{id:3,name:"Alex"},{id:1,name:"Paul"}];
+// console.log(students);
+
+// 1
+// if two or more students have same id then it will return only first element index
+// let result =students.findIndex(students=>{
+    //     return students.id ===1
+// })
+// console.log(result);
+
+// 2
+// let res =students.findIndex(students=>{
+    //     return students.id === 5
+// })
+// console.log(res);         //if id not find it will retun -1
+
+
+// another way
+// in below example  we can use Indexof also
+// but disadvantage of indexOf is that we cann't put condition on it to find index
+
+// let ages =[15,21,18,17,23];
+// let results=ages.findIndex(ages=>{
+    //     return ages>20;
+// })
+// console.log(results);
+
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.9 "some" and "every" methods
+
+// some method return "true" if "any" element pass the testcase
+
+// every method return "true" if "all" element pass the testcase
+
+
+
+// some method  -->its is losse condition
+// let scores = [25,34,67,80,92];
+
+// let result=scores.some(scores=>{
+//     return scores >50
+// return scores >95
+// })
+// console.log("some method result :",result);
+
+
+
+// every method
+// let newScores=[54,65,78,92,59];
+
+// let result1=newScores.every(newScores=>{
+    //     return newScores>50
+// })
+// console.log("every method result :",result1)
+
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.10 flat Method
+
+// It create a new array with the elements of the subarrays "concatenated" into it.
+
+
+// let arr =[1,2,3,[4,[5,7,9]]];
+
+// console.log("Before Flat",arr);
+
+// let result =arr.flat(1);  //by default 1 value --> it will go to the depth "one" sub array
+
+// let result =arr.flat(2);  //it we go to the depth "2nd" subarray
+
+// console.log("After Flat",result);
+
+
+
+// it also non mutating method
+
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.11 flatMap Method 
+
+// it is the combination of 'map()' method followed by the 'flat()' method of depth "1"
+
+// let cart = [{
+//     name:"Mobile Phone",
+//     qty:2,
+//     price:15000
+// },{
+//     name:"Tablet",
+//     qty:1,
+//     price:12000
+// }]
+
+
+// first print it with map and then change to flatMap using commentout
+
+// let newCart = cart.map(item=>{
+// let newCart = cart.flatMap(item=>{
+//         if (item.name == "Mobile Phone") {
+//         return[item,{
+//             name:"Screen Protector",
+//             qty:1,
+//             price:0
+//         }]
+//     }else{
+//         return[item]
+//     }
+// })
+
+// console.log(newCart);
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.12 Sorting arrays
+
+// By default sort method is used to sort strings
+// It firstly convert everything into string and then ...
+
+// let letters=["d","r","w","a","h"];
+
+// to sort in accending order
+// console.log(letters.sort());
+
+// to sort in decensing order
+// console.log(letters.sort().reverse());
+
+
+// Another example
+// let num=[6,4,8,2,9,2,9,0,3,4,7];
+
+// console.log(num.sort());
+// console.log(num.sort().reverse());
+
+
+// Another example
+// let nums=[2,4,-7,-1,-66, 94];
+// console.log("Unsorted",nums);    
+// console.log(nums.sort());    // Note :- Resukt will be Unexcpected means wrong
+
+// suppose we have two value a and b.
+// case 1:
+// if a-b < 0 => a < b =>A,B  (keep order Same)
+// case 2:
+// if a-b > 0 => a > b =>B,A  (switch the order)
+
+
+// nums.sort((a,b)=>{
+//     if (a<b) {
+//         return -1;    //Any number less than zero
+//     }
+//     if(a>b){
+    //         return 1;  // Any number greater than zero
+//     }
+// })
+
+// above conditon alos can be written as
+// it will give "Acccending" Sort
+// nums.sort((a,b)=>{
+    // return a-b;
+    // })
+
+// for "Desending" Sort
+// nums.sort((a,b)=>{
+// return b-a;              //change to b-a
+// })
+
+// console.log("Sorted",nums);
+
+    
+
+
+// <--------------------------------------------------------------------------------------------->
+
+// 7.13 Chaining of methods
+
+let num =[1,2,3,4,5,6,7];
+console.log(num);
+
+let result= num.slice(0,3).splice(2,1,7);
+console.log(result);
+
+console.log(num);  //it will not chnage cause slice in non mutating elements
+
+// if we have directly applied splicce then it will mutate
