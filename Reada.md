@@ -112,33 +112,33 @@ Intro and Setups
 
 
  |-Chapter 11 Async JS
-07:41:41 11.1 Async Code
-07:44:41 11.2 XML Http Request
-07:50:16 11.3 Status code
-07:52:46 11.4 Call back Function
-08:00:34 11.5 Extracting JSON data
-08:04:01 11.6 Callback hell
-08:09:10 11.7 Basics of Promise
-08:16:48 11.8 Chaining of promise
-08:20:06 11.9 Fetch API
-08:22:53 11.10 Async Await
+11.1 Async Code
+11.2 XML Http Request
+11.3 Status code
+11.4 Call back Function
+11.5 Extracting JSON data
+11.6 Callback hell
+11.7 Basics of Promise
+11.8 Chaining of promise
+11.9 Fetch API
+11.10 Async Await
 11.11 Custom Errors
 11.12 Async Await without return statement
 11.13 Error Handling using try catch method
 
  |-Chapter 12 ES6
-08:44:03 12.1 Array De-structuring
-08:52:45 12.2 Object De-structuring
-09:02:09 12.3 Spread Operator
-09:07:59 12.4 Rest Operator
-09:11:39 12.5 Short Circuiting
-09:16:26 12.6 Nullish coalescing operator
-09:18:22 12.7 for-of loop
-09:22:15 12.8 Enhanced Object Literals-shortcuts
-09:26:13 12.9 Optional Chaining
-09:31:37 12.10 Looping Objects
-09:36:22 12.11 Sets
-09:40:32 12.12 Map Intro And Map Iteration
+Array De-structuring
+12.2 Object De-structuring
+12.3 Spread Operator
+12.4 Rest Operator
+12.5 Short Circuiting
+12.6 Nullish coalescing operator
+12.7 for-of loop
+12.8 Enhanced Object Literals-shortcuts
+12.9 Optional Chaining
+12.10 Looping Objects
+12.11 Sets
+12.12 Map Intro And Map Iteration
 
  |-Chapter 13 Modern Tooling
 
